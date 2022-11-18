@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.60b738c3.css",
-    "main.js": "/static/js/main.95967c12.js",
-    "static/js/787.c2382288.chunk.js": "/static/js/787.c2382288.chunk.js",
-    "static/media/front.jpg": "/static/media/front.b8902fa34119bd9b18d5.jpg",
-    "static/media/abouthealth.jpg": "/static/media/abouthealth.0d937f26204ddf246174.jpg",
-    "static/media/products.jpg": "/static/media/products.0b0bfe3a65c9612d4359.jpg",
-    "static/media/subscribers.jpg": "/static/media/subscribers.8d7587fad49c0543ed25.jpg",
-    "static/media/smuknu_logo.png": "/static/media/smuknu_logo.c8d8f4eea23d376d7712.png",
-    "index.html": "/index.html",
-    "main.60b738c3.css.map": "/static/css/main.60b738c3.css.map",
-    "main.95967c12.js.map": "/static/js/main.95967c12.js.map",
-    "787.c2382288.chunk.js.map": "/static/js/787.c2382288.chunk.js.map"
+    "main.css": "/smuknu/static/css/main.60b738c3.css",
+    "main.js": "/smuknu/static/js/main.8e160bb4.js",
+    "static/js/787.c2382288.chunk.js": "/smuknu/static/js/787.c2382288.chunk.js",
+    "static/media/front.jpg": "/smuknu/static/media/front.b8902fa34119bd9b18d5.jpg",
+    "static/media/abouthealth.jpg": "/smuknu/static/media/abouthealth.0d937f26204ddf246174.jpg",
+    "static/media/products.jpg": "/smuknu/static/media/products.0b0bfe3a65c9612d4359.jpg",
+    "static/media/subscribers.jpg": "/smuknu/static/media/subscribers.8d7587fad49c0543ed25.jpg",
+    "static/media/smuknu_logo.png": "/smuknu/static/media/smuknu_logo.c8d8f4eea23d376d7712.png",
+    "index.html": "/smuknu/index.html",
+    "main.60b738c3.css.map": "/smuknu/static/css/main.60b738c3.css.map",
+    "main.8e160bb4.js.map": "/smuknu/static/js/main.8e160bb4.js.map",
+    "787.c2382288.chunk.js.map": "/smuknu/static/js/787.c2382288.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60b738c3.css",
-    "static/js/main.95967c12.js"
+    "static/js/main.8e160bb4.js"
   ]
 }
