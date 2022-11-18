@@ -1,0 +1,47 @@
+.block{
+    width: 100%;
+    background-color: #F7F0F2;
+}
+.subscribe{
+    height: 320px;
+}
+.title{
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 45px;
+}
+.text{
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+.photos{
+    display: none;
+}
+@media (min-width: 728px) {
+    .block{
+        width: 100%;
+    }
+.subscribe{
+    height: 400px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribeBlock{
+    max-width: 50%;
+}
+.photos {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photo{
+margin: 15px;
+}
+}

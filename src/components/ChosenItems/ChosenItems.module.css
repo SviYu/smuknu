@@ -1,0 +1,20 @@
+.sectionTwo{
+    width: 100%;
+}
+.secTwoTitle{
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center; 
+    margin: 44px auto;
+}
+.line2{
+    color: #FA96AA;
+}
+
+@media (min-width: 728px) {
+    .wrapper{
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

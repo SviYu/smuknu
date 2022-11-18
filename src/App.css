@@ -1,0 +1,25 @@
+.App{
+  /* width: 380px; */
+  margin: 0 auto;
+}
+.pinkBtn{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #FA96AA;
+  border-radius: 30px;
+  width: 320px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  box-shadow: 0px 3px 6px #00000029;
+  transition: all .3s;
+}
+.pinkBtn:hover {
+  box-shadow: none;
+  background-color: pink;
+}
