@@ -19,7 +19,7 @@ const Products = ( {AddToCart, product} ) => {
 
 
     return (
-        <div className={s.section}>
+        <div className={s.section} id="top">
             <div className={s.header}>
                 <img className={s.bgImage} src={bgImage} alt="Products" />
                 <div className={s.sectionBox}>
