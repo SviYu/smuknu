@@ -16,7 +16,7 @@ const Navbar = ( {cart, product} ) => {
     return (
         <>
         <div className={s.navbar}>
-            <a className={s.logobox} href="/#top" ><img className={s.logo} src={logo} alt="Logo" /></a>
+            <a className={s.logobox} href="#" ><img className={s.logo} src={logo} alt="Logo" /></a>
                 <div className={s.right}>
                     <ShoppingCart cart={cart} product={product} />    
                     <MenuIcon className={s.burgerIcon} fontSize='large' onClick={toggleMenu}/>
@@ -29,7 +29,7 @@ const Navbar = ( {cart, product} ) => {
                         /* Auto-closing of burger menu after clicking the link */
                         onClick={() => setOpenMenu(prevState => !prevState)}>
                         
-                        <Link to="/smuknu" className={s.burgerItem}>
+                        <Link to="/smuknu/smuknu" className={s.burgerItem}>
                             <p className={s.burgerLink}>Forsiden</p>
                         </Link>
                         <Link to="/produkter" className={s.burgerItem}>
