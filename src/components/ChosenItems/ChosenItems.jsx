@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import ProductItem from '../Products/ProductItem'
 import s from './ChosenItems.module.css'
 
-const ChosenItems = () => {
+const ChosenItems = ({ AddToCart }) => {
     const [chosenItem, setChosenItem] = useState([]);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const ChosenItems = () => {
                 </div>
 
                 <div className={s.wrapper}>
-                     {chosenItem.map((item) => <ProductItem product={item} key={item.id }/>)}
+                     {chosenItem.map((item) => <ProductItem product={item} key={item.id } />)}
                 </div>
 
             </div>

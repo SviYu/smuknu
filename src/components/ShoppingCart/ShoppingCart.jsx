@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import s from './ShoppingCart.module.css';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
-const ShoppingCart = ({cart }) => {
+const ShoppingCart = ({cart, AddToCart, RemoveFromCart }) => {
     const [openCart, setOpenCart] = useState(false);
 
     /* Toggling the Cart button */
@@ -22,8 +22,8 @@ const ShoppingCart = ({cart }) => {
                     <div className={s.content}>
                         {cart.length === 0 && <p className={s.cartText}>Der er ingen produkter i kurven</p>}
                           
-            {/* {cart.length > 0 && { cart }} */}
-            {cart}
+                         { cart }
+    
                     </div>
                 </div>
             ) : null}

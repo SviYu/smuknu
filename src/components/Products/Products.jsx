@@ -1,23 +1,10 @@
 import s from './Products.module.css';
 import bgImage from './../../assets/headers/products.jpg'
-/* import { useState } from 'react';
-import { useEffect } from 'react'; */
 import ProductItem from './ProductItem';
 import Subscribe from '../Subscribe/Subscribe';
 
 const Products = ( {AddToCart, product} ) => {
-    /* const [product, setProduct] = useState([]);
-
-    useEffect(() => {
-        fetch('https://smuknu.webmcdm.dk/products')
-            .then((response) => response.json())
-            .then((productData) => {
-                setProduct(productData);
-                console.log(productData)
-            })
-    }, []) */
-
-
+ 
     return (
         <div className={s.section} id="top">
             <div className={s.header}>
