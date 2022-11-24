@@ -61,7 +61,7 @@ function App() {
         <Navbar cart={cart} AddToCart={AddToCart}/>
       
           <Routes>
-          <Route path='/smuknu' element={<Landing />} />
+          <Route path='/' element={<Landing />} />
             <Route path='/blivmedlem' element={ <BeMember/>} />
             <Route path='/sundhed' element={ <Health/>} />
           <Route path='/produkter' element={<Products AddToCart={AddToCart} product={product} />} />
