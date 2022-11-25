@@ -24,8 +24,8 @@ const Subscribe = () => {
                 <div><Link to='/blivmedlem' className="pinkBtn">Bliv medlem af kundeklubben</Link></div>
             </div>
             <div className={s.photos}>
-                {feedbackImage.map((photo) => 
-                    <img className={s.photo} src={photo.image} alt="Women" />
+                {feedbackImage.map((photo, idx) => 
+                    <img className={s.photo} src={photo.image} key={idx} alt="Women" />
                 )}
             </div>
             </div>

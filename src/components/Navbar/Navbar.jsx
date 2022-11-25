@@ -6,7 +6,7 @@ import logo from './../../assets/logo/smuknu_logo.png';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 
-const Navbar = ( {cart, product, AddToCart } ) => {
+const Navbar = ( {cart, product, AddToCart, renderCart } ) => {
     /* Burger Menu */
     const [openMenu, setOpenMenu] = useState(false);
     const toggleMenu = () => {
@@ -18,7 +18,7 @@ const Navbar = ( {cart, product, AddToCart } ) => {
         <div className={s.navbar}>
             <a className={s.logobox} href="#" ><img className={s.logo} src={logo} alt="Logo" /></a>
                 <div className={s.right}>
-                    <ShoppingCart cart={cart} product={product} AddToCart={AddToCart}/>    
+                    <ShoppingCart cart={cart} product={product} AddToCart={AddToCart} renderCart={renderCart}/>    
                     <MenuIcon className={s.burgerIcon} fontSize='large' onClick={toggleMenu}/>
                 </div>
         </div>
@@ -29,7 +29,7 @@ const Navbar = ( {cart, product, AddToCart } ) => {
                         /* Auto-closing of burger menu after clicking the link */
                         onClick={() => setOpenMenu(prevState => !prevState)}>
                         
-                        <Link to="/" className={s.burgerItem}>
+                        <Link to="/smuknu" className={s.burgerItem}>
                             <p className={s.burgerLink}>Forsiden</p>
                         </Link>
                         <Link to="/produkter" className={s.burgerItem}>

@@ -27,7 +27,7 @@ const Feedback = () => {
         </div>
             
             {/* FeedbackItem */}
-        {data.map((feedback) => <FeedbackItem feedback={feedback}/>)}
+            {data.map((feedback, idx) => <FeedbackItem feedback={feedback} key={idx} />)}
         </>
     )
     
