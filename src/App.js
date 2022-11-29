@@ -86,11 +86,11 @@ function App() {
     }
 
   
-  
-
+  const development = false
+    //ture
   return (
     <div className='App'>
-      <BrowserRouter basename="smuknu">
+      <BrowserRouter basename={development ? '' : '/smuknu'}>
         <Navbar cart={cart} AddToCart={AddToCart} renderCart={renderCart} />
       
           <Routes>
