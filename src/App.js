@@ -86,10 +86,6 @@ function App() {
       ))
     }
 
-  
-  const development = false
-    //true for localhost
-    //false for Live Version
   return (
     <div className='App'>
       <BrowserRouter basename={config.development ? '/' : '/smuknu'}>
