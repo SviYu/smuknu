@@ -24,7 +24,7 @@ const ProductItem = ({ product, AddToCart }) => {
                         <p className={s.price}>
                             {product.price},00 kr.
                         </p>
-                        <button className={s.buyBtn} onClick={() => AddToCart(product)}>KØB</button>
+                        {/* <button className={s.buyBtn} onClick={() => AddToCart(product)}>KØB</button> */}
                     
                     </div>
                 </div>

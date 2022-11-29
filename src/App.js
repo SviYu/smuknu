@@ -15,8 +15,12 @@ function App() {
   /* Fetching product with API */
   const [product, setProduct] = useState([]);
 
-    useEffect(() => {
-        fetch('https://smuknu.webmcdm.dk/products')
+  useEffect(() => {
+      
+    let products = './smuknu/data/products.json'
+    
+        fetch(products)
+        /* fetch('https://smuknu.webmcdm.dk/products') */
             .then((response) => response.json())
             .then((productData) => {
                 setProduct(productData);
