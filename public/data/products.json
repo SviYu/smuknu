@@ -62,12 +62,19 @@
         "recommended": false,
         "image": "https://smuknu.webmcdm.dk/products/product_4566543883.jpg",
         "discountInPercent": ""
-    }
-    ,
+    },
     {
         "id": 45665438878,
         "title": "Test",
         "price": 110,
+        "recommended": false,
+        "image": "https://smuknu.webmcdm.dk/products/product_4566543883.jpg",
+        "discountInPercent": ""
+    },
+    {
+        "id": 456654388789,
+        "title": "Test 2",
+        "price": 1000,
         "recommended": false,
         "image": "https://smuknu.webmcdm.dk/products/product_4566543883.jpg",
         "discountInPercent": ""
