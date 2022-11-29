@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../../assets/logo/smuknu_logo.png';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
+import config from '../../configuration';
 
 
 const Navbar = ( {cart, product, AddToCart, renderCart } ) => {
@@ -29,7 +30,7 @@ const Navbar = ( {cart, product, AddToCart, renderCart } ) => {
                         /* Auto-closing of burger menu after clicking the link */
                         onClick={() => setOpenMenu(prevState => !prevState)}>
                         
-                        <Link to="/" className={s.burgerItem}>
+                        <Link to={config.development ? '/' : '/smuknu'} className={s.burgerItem}>
                             <p className={s.burgerLink}>Forsiden</p>
                         </Link>
                         <Link to="/produkter" className={s.burgerItem}>

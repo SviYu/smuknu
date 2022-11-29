@@ -8,6 +8,7 @@ import Health from './components/Health/Health';
 import Products from './components/Products/Products';
 import { useEffect, useState } from 'react';
 import style from './components/ShoppingCart/ShoppingCart.module.css'
+import config from './configuration';
 
 
 function App() {
@@ -87,14 +88,15 @@ function App() {
 
   
   const development = false
-    //ture
+    //true for localhost
+    //false for Live Version
   return (
     <div className='App'>
-      <BrowserRouter basename={development ? '' : '/smuknu'}>
+      <BrowserRouter basename={config.development ? '/' : '/smuknu'}>
         <Navbar cart={cart} AddToCart={AddToCart} renderCart={renderCart} />
       
           <Routes>
-          <Route path='/' element={<Landing />} />
+          <Route path={config.development ? '/' : '/smuknu'} element={<Landing />} />
           <Route path='/blivmedlem' element={ <BeMember/>} />
           <Route path='/sundhed' element={ <Health/>} />
           <Route path='/produkter' element={<Products AddToCart={AddToCart} product={product} />} />
