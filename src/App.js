@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     
-        fetch('./data/products.json')
+        fetch('./smuknu/data/products.json')
         /* fetch('https://smuknu.webmcdm.dk/products') */
             .then((response) => response.json())
             .then((productData) => {
@@ -87,12 +87,12 @@ function App() {
   return (
     <div className='App'>
       {/* <BrowserRouter basename={config.development ? '/' : '/smuknu'}> */}
-      <BrowserRouter basename="smuknu">
+      <BrowserRouter /* basename="smuknu" */>
         <Navbar cart={cart} AddToCart={AddToCart} renderCart={renderCart} />
       
           <Routes>
           {/* <Route path={config.development ? '/' : '/smuknu'} element={<Landing />} /> */}
-          <Route path='/' element={<Landing />} />
+          <Route path='/smuknu' element={<Landing />} />
           <Route path='/blivmedlem' element={ <BeMember/>} />
           <Route path='/sundhed' element={ <Health/>} />
           <Route path='/produkter' element={<Products AddToCart={AddToCart} product={product} />} />
