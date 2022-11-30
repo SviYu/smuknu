@@ -30,7 +30,8 @@ const Navbar = ( {cart, product, AddToCart, renderCart } ) => {
                         /* Auto-closing of burger menu after clicking the link */
                         onClick={() => setOpenMenu(prevState => !prevState)}>
                         
-                        <Link to={config.development ? '/' : '/smuknu'} className={s.burgerItem}>
+                        {/* <Link to={config.development ? '/' : '/smuknu'} className={s.burgerItem}> */}
+                        <Link to= '/' className={s.burgerItem}>
                             <p className={s.burgerLink}>Forsiden</p>
                         </Link>
                         <Link to="/produkter" className={s.burgerItem}>
