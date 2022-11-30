@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     
-        fetch('./smuknu/data/products.json')
+        fetch('./data/products.json')
         /* fetch('https://smuknu.webmcdm.dk/products') */
             .then((response) => response.json())
             .then((productData) => {
