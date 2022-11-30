@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/smuknu/static/css/main.5a8c9da1.css",
-    "main.js": "/smuknu/static/js/main.9871435b.js",
+    "main.js": "/smuknu/static/js/main.1a288816.js",
     "static/js/787.c2382288.chunk.js": "/smuknu/static/js/787.c2382288.chunk.js",
     "static/media/front.jpg": "/smuknu/static/media/front.b8902fa34119bd9b18d5.jpg",
     "static/media/abouthealth.jpg": "/smuknu/static/media/abouthealth.0d937f26204ddf246174.jpg",
@@ -10,11 +10,11 @@
     "static/media/smuknu_logo.png": "/smuknu/static/media/smuknu_logo.c8d8f4eea23d376d7712.png",
     "index.html": "/smuknu/index.html",
     "main.5a8c9da1.css.map": "/smuknu/static/css/main.5a8c9da1.css.map",
-    "main.9871435b.js.map": "/smuknu/static/js/main.9871435b.js.map",
+    "main.1a288816.js.map": "/smuknu/static/js/main.1a288816.js.map",
     "787.c2382288.chunk.js.map": "/smuknu/static/js/787.c2382288.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a8c9da1.css",
-    "static/js/main.9871435b.js"
+    "static/js/main.1a288816.js"
   ]
 }
