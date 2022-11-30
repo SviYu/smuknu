@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
       
-    let products = './smuknu/data/products.json'
+    let products = './data/products.json'
     
         fetch(products)
         /* fetch('https://smuknu.webmcdm.dk/products') */
