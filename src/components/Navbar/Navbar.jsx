@@ -31,7 +31,7 @@ const Navbar = ( {cart, product, AddToCart, renderCart } ) => {
                         onClick={() => setOpenMenu(prevState => !prevState)}>
                         
                         {/* <Link to={config.development ? '/' : '/smuknu'} className={s.burgerItem}> */}
-                        <Link to= '/smuknu' className={s.burgerItem}>
+                        <Link to= '/' className={s.burgerItem}>
                             <p className={s.burgerLink}>Forsiden</p>
                         </Link>
                         <Link to="/produkter" className={s.burgerItem}>

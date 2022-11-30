@@ -11,7 +11,7 @@ const Health = () => {
 
     useEffect(() => {
         /* fetch(`https://smuknu.webmcdm.dk/questions`) */
-        fetch('./smuknu/data/questions.json')
+        fetch('./data/questions.json')
             .then((response) => response.json()) //hentes JSON data
             .then((Data => {
                 setData(Data);//setData - resultat af det vi hentede før;
