@@ -10,7 +10,8 @@ const Health = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch(`https://smuknu.webmcdm.dk/questions`)
+        /* fetch(`https://smuknu.webmcdm.dk/questions`) */
+        fetch('./smuknu/data/questions.json')
             .then((response) => response.json()) //hentes JSON data
             .then((Data => {
                 setData(Data);//setData - resultat af det vi hentede før;

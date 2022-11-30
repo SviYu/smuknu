@@ -7,7 +7,8 @@ const Feedback = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch(`https://smuknu.webmcdm.dk/reviews`)
+        /* fetch(`https://smuknu.webmcdm.dk/reviews`) */
+        fetch('./smuknu/data/rewiews.json')
             .then((response) => response.json()) //hentes JSON data
             .then((actualData) => {
                 setData(actualData); //setData - resultat af det vi hentede før

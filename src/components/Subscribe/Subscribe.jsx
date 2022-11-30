@@ -8,7 +8,8 @@ const Subscribe = () => {
 
      /* Getting photos of glad women */
     useEffect(() => {
-        fetch(`https://smuknu.webmcdm.dk/reviews`)
+        /* fetch(`https://smuknu.webmcdm.dk/reviews`) */
+        fetch('./smuknu/data/rewiews.json')
             .then((response) => response.json()) //hentes JSON data
             .then((actualData) => {
                 setFeedbackImage(actualData); //setData - resultat af det vi hentede før

@@ -8,7 +8,8 @@ const ChosenItems = ({ AddToCart }) => {
     const [chosenItem, setChosenItem] = useState([]);
 
     useEffect(() => {
-        fetch('https://smuknu.webmcdm.dk/products')
+        /* fetch('https://smuknu.webmcdm.dk/products') */
+        fetch('./smuknu/data/products.json')
             .then((response) => response.json())
             .then((productData) => {
                 /* filter products with recommended status */
