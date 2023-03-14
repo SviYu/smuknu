@@ -18,7 +18,6 @@ function App() {
   useEffect(() => {
     
         fetch('./data/products.json')
-        /* fetch('https://smuknu.webmcdm.dk/products') */
             .then((response) => response.json())
             .then((productData) => {
                 setProduct(productData);
@@ -89,7 +88,7 @@ function App() {
         <Navbar cart={cart} AddToCart={AddToCart} renderCart={renderCart} />
     
           <Routes>
-            <Route path='/smuknu' element={<Landing />} />
+          <Route path='/smuknu' element={<Landing product={ product} />} />
             <Route path='/blivmedlem' element={ <BeMember/>} />
             <Route path='/sundhed' element={ <Health/>} />
             <Route path='/produkter' element={<Products AddToCart={AddToCart} product={product} />} />

@@ -4,17 +4,15 @@ import { useEffect, useState } from 'react';
 import ProductItem from '../Products/ProductItem'
 import s from './ChosenItems.module.css'
 
-const ChosenItems = ({ AddToCart }) => {
+const ChosenItems = ({ AddToCart, product }) => {
     const [chosenItem, setChosenItem] = useState([]);
 
     useEffect(() => {
-        /* fetch('https://smuknu.webmcdm.dk/products') */
-        fetch('./smuknu/data/products.json')
+        fetch('./data/products.json')
             .then((response) => response.json())
             .then((productData) => {
                 /* filter products with recommended status */
                 setChosenItem(productData.filter((chosenItem) => chosenItem.recommended));
-                /* console.log('Chosen: ',setChosenItem) */
             })
     }, [])
 
