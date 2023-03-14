@@ -6,10 +6,10 @@ import Subscribe from "./Subscribe/Subscribe";
 const Landing = () => {
     return (
         <>
-                <Header />
-                <ChosenItems />
-                <Feedback />
-                <Subscribe />
+            <Header />
+            <ChosenItems />
+            <Feedback />
+            <Subscribe />
         </>
     )
 }

@@ -4,8 +4,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../../assets/logo/smuknu_logo.png';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
-import config from '../../configuration';
-
 
 const Navbar = ( {cart, product, AddToCart, renderCart } ) => {
     /* Burger Menu */
@@ -17,7 +15,7 @@ const Navbar = ( {cart, product, AddToCart, renderCart } ) => {
     return (
         <>
         <div className={s.navbar}>
-            <a className={s.logobox} href="#" ><img className={s.logo} src={logo} alt="Logo" /></a>
+            <Link className={s.logobox} to="/smuknu" ><img className={s.logo} src={logo} alt="Logo" /></Link>
                 <div className={s.right}>
                     <ShoppingCart cart={cart} product={product} AddToCart={AddToCart} renderCart={renderCart}/>    
                     <MenuIcon className={s.burgerIcon} fontSize='large' onClick={toggleMenu}/>
